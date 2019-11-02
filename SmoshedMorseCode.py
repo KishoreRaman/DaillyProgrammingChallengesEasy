@@ -10,14 +10,14 @@ alpha = string.ascii_lowercase  # Gets the alphabets as a list
 joiner = dict ( zip ( alpha, morseCodeGuide ) )  # Joins the two list as a dictionary
 
 
-assert (encrypter ( 'sos' )) == '... --- ...'   #Testing
 
 def encrypter(input) :
     return ' '.join ( joiner[i] for i in input.lower () )
 
 
+# Test
+assert (encrypter ( 'sos' )) == '... --- ...'  # Testing
+
+# input
 inp = input ( "Enter a string" )
 print ( encrypter ( inp ) )
-
-
-
